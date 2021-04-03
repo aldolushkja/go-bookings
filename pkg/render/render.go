@@ -3,8 +3,8 @@ package render
 import (
 	"bytes"
 	"fmt"
-	"github.com/aldolushkja/gohello-web/config"
-	"github.com/aldolushkja/gohello-web/models"
+	"github.com/aldolushkja/gobookings/pkg/config"
+	"github.com/aldolushkja/gobookings/pkg/models"
 	"html/template"
 	"log"
 	"net/http"

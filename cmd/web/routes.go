@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/aldolushkja/gohello-web/config"
-	"github.com/aldolushkja/gohello-web/pkg/handlers"
-	"github.com/go-chi/chi/v5"
+	"github.com/aldolushkja/gobookings/pkg/config"
+	"github.com/aldolushkja/gobookings/pkg/handlers"
+	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/v5/middleware"
 	"net/http"
 )

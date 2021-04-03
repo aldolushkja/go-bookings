@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"github.com/aldolushkja/gohello-web/config"
-	"github.com/aldolushkja/gohello-web/models"
-	"github.com/aldolushkja/gohello-web/pkg/render"
+	"github.com/aldolushkja/gobookings/pkg/config"
+	"github.com/aldolushkja/gobookings/pkg/models"
+	"github.com/aldolushkja/gobookings/pkg/render"
 	"net/http"
 )
 
