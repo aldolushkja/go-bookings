@@ -20,6 +20,10 @@
             color: white;
             font-size: 80%;
         }
+
+        .redText {
+            color: red;
+        }
     </style>
 </head>
 
@@ -93,6 +97,16 @@
 
             </form>
 
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p id="myparagraph">this is some text</p>
+            <p>
+                <button id="colorBtn" class="btn btn-outline-secondary">Click me</button>
+            </p>
         </div>
     </div>
 
@@ -122,7 +136,45 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
 
+<script>
 
+
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        let forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+
+
+    let colorBtn = document.querySelector("#colorBtn");
+
+    colorBtn.addEventListener("click", function () {
+        let myParagraph = document.querySelector("#myparagraph");
+
+        if (myParagraph.classList.contains("redText")) {
+            myParagraph.classList.remove("redText")
+        } else {
+            myParagraph.classList.add("redText")
+        }
+    })
+
+
+</script>
 </body>
 
 </html>
