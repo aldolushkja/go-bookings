@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/aldolushkja/gobookings/internal/config"
+	"github.com/aldolushkja/gobookings/internal/forms"
 	"github.com/aldolushkja/gobookings/internal/models"
 	"github.com/aldolushkja/gobookings/internal/render"
 	"log"
@@ -117,5 +118,11 @@ func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
 	//remoteIP := r.RemoteAddr
 	//m.App.Session.Put(r.Context(), "remote_ip", remoteIP)
 
-	render.RenderTemplate(w, r, "make-reservations.page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservations.page.tmpl", &models.TemplateData{
+		Form: forms.New(nil),
+	})
+}
+
+// PostReservation handles the posting of a reservation form
+func (m *Repository) PostReservation(w http.ResponseWriter, r *http.Request) {
 }
