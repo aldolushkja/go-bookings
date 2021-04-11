@@ -3,8 +3,8 @@ package render
 import (
 	"bytes"
 	"fmt"
-	"github.com/aldolushkja/gobookings/pkg/config"
-	"github.com/aldolushkja/gobookings/pkg/models"
+	"github.com/aldolushkja/gobookings/internal/config"
+	"github.com/aldolushkja/gobookings/internal/models"
 	"github.com/justinas/nosurf"
 	"html/template"
 	"log"

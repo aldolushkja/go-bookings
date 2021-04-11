@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/aldolushkja/gobookings/pkg/config"
-	"github.com/aldolushkja/gobookings/pkg/handlers"
+	"github.com/aldolushkja/gobookings/internal/config"
+	"github.com/aldolushkja/gobookings/internal/handlers"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/v5/middleware"
 	"net/http"
