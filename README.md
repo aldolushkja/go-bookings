@@ -19,3 +19,29 @@ go build .
 ```shell
 go run cmd/web/*.go
 ```
+
+## Test
+
+**run simple test**
+
+```shell
+go test
+```
+
+**run simple test verbose**
+
+```shell
+go test -v
+```
+
+**run test with coverage**
+
+```shell
+go test -cover
+```
+
+**run test with coverage and print result in html**
+
+```shell
+go test -coverprofile=coverage.out && go tool cover -html=coverage.out
+```
