@@ -7,3 +7,15 @@ This is the repository for my bookings and reservations project.
 - Uses [alex edwards SCS](https://github.com/alexedwards/scs/) session management
 - Uses [nosurf](https://github.com/justinas/nosurf) for CSRF Token POST Protection
 - Uses [govalidator](https://github.com/asaskevich/govalidator) for validation
+
+## Build
+
+```shell
+go build .
+```
+
+## Run
+
+```shell
+go run cmd/web/*.go
+```
